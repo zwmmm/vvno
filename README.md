@@ -3,7 +3,7 @@
 基于 **Vite** 快速运行前端组件
 
 ```bash
-> vvd index.tsx
+> vvno index.tsx
 ```
 
 ## 支持以下几种
@@ -15,5 +15,5 @@
 ## 安装
 
 ```bash
-yarn global add vvdemo
+yarn global add vvno
 ```
