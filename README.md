@@ -15,5 +15,36 @@
 ## 安装
 
 ```bash
-yarn global add vvno
+> yarn global add vvno
 ```
+
+## 使用
+
+- 预览 React 组件
+
+    ```tsx
+    // index.tsx
+    
+    export default function () {
+      return <div>React</div>
+    }
+    
+    ```
+    
+    ```shell
+    > vvno index.tsx
+    ```
+
+- 预览 Vue 组件
+
+    ```vue
+    <!--    index.vue-->
+    
+    <template>
+      <div>Vue</div>
+    </template>
+    ```
+    
+    ```shell
+    > vvno index.vue
+    ```
