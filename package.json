@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "dist/index.cjs",
   "bin": {
-    "vvd": "./bin/vvdemo"
+    "vvd": "./bin/vvdemo",
+    "vvdemo": "./bin/vvdemo"
   },
-  "description": "快速运行demo",
+  "description": "基于 Vite 快速运行前端组件",
   "author": "wayne <wei.zheng02@weimob.com>",
   "license": "MIT",
   "dependencies": {
@@ -25,6 +26,19 @@
     "unbuild": "^0.7.4"
   },
   "scripts": {
-    "dev": "unbuild --stub"
-  }
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "prepublish": "yarn build"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "files": [
+    "bin",
+    "react",
+    "dist",
+    "vue",
+    "tsconfig.json",
+    "tsconfig.node.json"
+  ]
 }
