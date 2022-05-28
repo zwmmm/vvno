@@ -1,4 +1,5 @@
-import { lazy, StrictMode, Suspense } from 'react'
+// @ts-nocheck
+import React, { lazy, StrictMode, Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
 
 const ErrorApp = () => {
