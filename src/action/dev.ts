@@ -4,7 +4,7 @@ import { resolve } from 'path'
 
 const root = process.cwd()
 
-export async function dev() {
+export async function dev(filename: string) {
   const server = await createServer({
     root: resolve(__dirname, '../../react-ts'),
     server: {
@@ -13,7 +13,7 @@ export async function dev() {
       },
     },
     define: {
-      __ROOT__: JSON.stringify(root),
+      __MAIN__: JSON.stringify(resolve(root, filename)),
     },
     plugins: [react()],
   })

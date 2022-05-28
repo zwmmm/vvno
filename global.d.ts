@@ -1,1 +1,1 @@
-const __ROOT__: string
+const __MAIN__: string
