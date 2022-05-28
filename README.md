@@ -1,5 +1,8 @@
 <h1 align='center'>
-<samp>vvno</samp>
+  <samp>vvno</samp>
+  <a href='https://www.npmjs.com/package/vvno'>
+    <img src='https://img.shields.io/npm/v/vvno?color=333&labelColor=555&style=flat-square' alt='version'/>
+  </a>
 </h1>
 
 <p align='center'>
