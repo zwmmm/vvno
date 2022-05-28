@@ -1,0 +1,24 @@
+{
+  "name": "vvdemo",
+  "version": "1.0.0",
+  "main": "dist/index.cjs",
+  "bin": {
+    "vvd": "./bin/vvdemo"
+  },
+  "description": "快速运行demo",
+  "author": "wayne <wei.zheng02@weimob.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@vitejs/plugin-react": "^1.3.2",
+    "commander": "^9.3.0",
+    "consola": "^2.15.3",
+    "typescript": "^4.7.2",
+    "vite": "^2.9.9"
+  },
+  "devDependencies": {
+    "unbuild": "^0.7.4"
+  },
+  "scripts": {
+    "dev": "unbuild --stub"
+  }
+}
