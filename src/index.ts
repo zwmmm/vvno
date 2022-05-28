@@ -2,7 +2,10 @@ import { createServer } from 'vite'
 import react from '@vitejs/plugin-react'
 import vue from '@vitejs/plugin-vue'
 import { resolve, extname } from 'path'
+import minimist from 'minimist'
 import consola from 'consola'
+
+const argv = minimist(process.argv.slice(2))
 
 const filename = process.argv[2]
 const cwd = process.cwd()
@@ -27,6 +30,9 @@ async function dev(filename: string) {
     root,
     plugins,
     server: {
+      port: argv.p,
+      cors: argv.cors || false,
+      open: true,
       host: true,
       fs: {
         strict: false,
