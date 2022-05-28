@@ -1,9 +1,15 @@
-<h1 style="text-align: center">vvno</h1>
+<h1 align='center'>
+<samp>vvno</samp>
+</h1>
 
-基于 **Vite** 快速运行前端组件
+<p align='center'>
+  <samp>基于 Vite 快速运行前端组件</samp>
+<br>
+
+## 安装
 
 ```bash
-> vvno index.tsx
+> yarn global add vvno
 ```
 
 ## 支持以下几种
@@ -11,12 +17,6 @@
 - React
 - Vue
 - TypeScript
-
-## 安装
-
-```bash
-> yarn global add vvno
-```
 
 ## 使用
 
