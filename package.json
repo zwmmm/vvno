@@ -1,6 +1,6 @@
 {
   "name": "vvno",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.cjs",
   "bin": {
     "vvno": "./bin/vvno"
@@ -20,9 +20,9 @@
     "vue": "^3.2.36"
   },
   "devDependencies": {
+    "@types/minimist": "^1.2.2",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.5",
-    "@types/minimist": "^1.2.2",
     "prettier": "^2.6.2",
     "unbuild": "^0.7.4"
   },
