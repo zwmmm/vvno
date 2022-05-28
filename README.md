@@ -38,7 +38,7 @@
 - 预览 Vue 组件
 
     ```vue
-    <!--    index.vue-->
+    <!--  index.vue  -->
     
     <template>
       <div>Vue</div>
