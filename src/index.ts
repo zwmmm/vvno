@@ -43,6 +43,8 @@ async function dev(filename: string) {
     },
     define: {
       __MAIN__: JSON.stringify(resolve(cwd, filename)),
+      'process.env': {},
+      global: {},
     },
   })
   await server.listen()
