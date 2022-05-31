@@ -4,6 +4,7 @@ import vue from '@vitejs/plugin-vue'
 import { resolve, extname } from 'path'
 import minimist from 'minimist'
 import consola from 'consola'
+import { execSync } from 'child_process'
 
 const argv = minimist(process.argv.slice(2))
 
@@ -25,6 +26,8 @@ async function dev(filename: string) {
     root = resolve(__dirname, '../vue')
     plugins = [vue()]
   }
+
+  execSync(`rm -rf ${resolve(__dirname, 'node_modules/.vite')}`)
 
   const server = await createServer({
     root,
